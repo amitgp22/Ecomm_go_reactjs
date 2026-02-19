@@ -5,7 +5,6 @@ import (
 	"ecommerce-api/models"
 	"encoding/json"
 	"net/http"
-
 )
 
 func GetProducts1(w http.ResponseWriter, r *http.Request) {
