@@ -5,11 +5,10 @@ import (
 	"ecommerce-api/models"
 	"encoding/json"
 	"net/http"
-
 )
 
 func GetProducts1(w http.ResponseWriter, r *http.Request) {
-	var products []models.Product
+	var products []models.Products2
 	config.DB.Find(&products)
 	json.NewEncoder(w).Encode(products)
 }
