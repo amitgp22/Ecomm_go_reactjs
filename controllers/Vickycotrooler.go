@@ -8,7 +8,7 @@ import (
 )
 
 func GetProducts1(w http.ResponseWriter, r *http.Request) {
-	var products []models.Product
+	var products []models.Products
 	config.DB.Find(&products)
 	json.NewEncoder(w).Encode(products)
 }
